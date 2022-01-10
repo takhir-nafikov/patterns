@@ -1,2 +1,9 @@
-package proxy.java.libraries;public class ThirdPartyYouTubeLib {
+package proxy.java.libraries;
+
+import java.util.HashMap;
+
+public interface ThirdPartyYouTubeLib {
+    HashMap<String, Video> popularVideos();
+
+    Video getVideo(String videoId);
 }
